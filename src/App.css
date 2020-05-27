@@ -1,8 +1,15 @@
 .App {
   text-align: center;
+  padding: 45px;
 }
 
 .range {
-  display: inline-block;
+  display: ;
 
+}
+
+.clear {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
 }

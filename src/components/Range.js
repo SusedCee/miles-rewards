@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Slider } from "react-semantic-ui-range";
-import { Label, Grid } from "semantic-ui-react";
+import { Label, Button } from "semantic-ui-react";
+import '../App.css';
 
 const Range = props => {
   const [value, setValue] = useState(1);
@@ -17,13 +18,24 @@ const Range = props => {
 
  console.log(value);
   return (
-  	<div>
-
-        <Slider value={value} settings={settings} style={{ trackFill: { backgroundColor: "#21b34f"}}} />
-        <Label color="red">{value}</Label>
-
-    </div>
+          <Header>
+            <Slider value={value} settings={settings} style={{ trackFill: { backgroundColor: "#21b34f"}}} />
+            <Header.Content>
+              Lena
+              <Header.Subheader>Human Resources</Header.Subheader>
+            </Header.Content>
+          </Header>
   );
 };
 
 export default Range;
+
+  	// <div className="range">
+  	// 	<div>
+   //      	<Slider value={value} settings={settings} style={{ trackFill: { backgroundColor: "#21b34f"}}} />
+   //      </div>
+   //      <div>
+   //      	<Label size='medium' color="#21b34f">Category {value}</Label>
+   //      	<Button size='mini'> x </Button>
+   //      </div>
+   //  </div>
