@@ -58,8 +58,6 @@ class RewardTable extends Component {
         </Table.Cell>
       </Table.Row>
     </Table.Body>
-    <br />
-
   </Table>
     <Button className="clear" size="sm" type="button">Reset All</Button>
 

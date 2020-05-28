@@ -1,11 +1,36 @@
 .App {
   text-align: center;
-  padding: 45px;
+  padding: 75px 150px 75px 150px;
+}
+
+@media screen and (max-width: 700px) {
+	.App {
+	  padding: 50px 50px 50px 50px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.App {
+	  padding: 75px 250px 75px 250px;
+	}
 }
 
 .range {
-  display: ;
+  	display: flex;
+  	justify-content: space-around;
+  	align-items: stretch;
+}
 
+.range-label-block {
+	flex-grow: 1;
+}
+
+.range-slider-block {
+	flex-grow: 4;
+}
+
+.range-button-block {
+	flex-grow: 1;
 }
 
 .clear {
