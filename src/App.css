@@ -1,4 +1,44 @@
-.App {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	padding: 15px;
+}
+
+h1 {
+	text-align: center
+}
+
+h3 {
+
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.flexbox .board {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 300px;
+	background-color: #E8E8E8;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+
+/*.App {
   text-align: center;
   padding: 75px 150px 75px 150px;
 }
@@ -13,28 +53,30 @@
 	.App {
 	  padding: 75px 250px 75px 250px;
 	}
-}
+}*/
 
 .range {
-  	display: flex;
+/*  	display: flex;
   	justify-content: space-around;
-  	align-items: stretch;
+  	align-items: stretch;*/
+  	justify-content: center;
+  	padding: 5px;
 }
 
-.range-label-block {
+/*.range-label-block {
 	flex-grow: 1;
-}
+}*/
 
-.range-slider-block {
+/*.range-slider-block {
 	flex-grow: 4;
-}
+}*/
 
-.range-button-block {
-	flex-grow: 1;
-}
+/*.range-button-block {
+	justify-content: center;
+}*/
 
-.clear {
+/*.clear {
 	display: flex;
 	justify-content: center;
 	padding: 20px;
-}
+}*/
